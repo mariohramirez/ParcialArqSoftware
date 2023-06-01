@@ -1,0 +1,33 @@
+{
+  "changelogDate": "20230601220010",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "dateEnroll",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "grades",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "SubjectBooked",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "student",
+      "relationshipName": "student",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "subject",
+      "relationshipName": "subject",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}
